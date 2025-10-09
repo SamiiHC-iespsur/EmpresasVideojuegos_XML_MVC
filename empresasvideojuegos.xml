@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresas>
+    <empresa>
+        <nombre>Nintendo</nombre>
+        <pais>Japón</pais>
+        <fundacion>1889</fundacion>
+        <juegosDestacados>
+            <juego>Super Mario Bros</juego>
+            <juego>The Legend of Zelda</juego>
+            <juego>Animal Crossing</juego>
+        </juegosDestacados>
+    </empresa>
+    <empresa>
+        <nombre>Electronic Arts</nombre>
+        <pais>Estados Unidos</pais>
+        <fundacion>1982</fundacion>
+        <juegosDestacados>
+            <juego>The Sims</juego>
+            <juego>FIFA</juego>
+            <juego>Madden NFL</juego>
+        </juegosDestacados>
+    </empresa>
+    <empresa>
+        <nombre>Ubisoft</nombre>
+        <pais>Francia</pais>
+        <fundacion>1986</fundacion>
+        <juegosDestacados>
+            <juego>Assassin's Creed</juego>
+            <juego>Far Cry</juego>
+            <juego>Just Dance</juego>
+        </juegosDestacados>
+    </empresa>
+    <empresa>
+        <nombre>Sony Interactive Entertainment</nombre>
+        <pais>Japón</pais>
+        <fundacion>1993</fundacion>
+        <juegosDestacados>
+            <juego>The Last of Us</juego>
+            <juego>God of War</juego>
+            <juego>Uncharted</juego>
+        </juegosDestacados>
+    </empresa>
+    <empresa>
+        <nombre>Activision Blizzard</nombre>
+        <pais>Estados Unidos</pais>
+        <fundacion>2008</fundacion>
+        <juegosDestacados>
+            <juego>Call of Duty</juego>
+            <juego>World of Warcraft</juego>
+            <juego>Overwatch</juego>
+        </juegosDestacados>
+    </empresa>
+</empresas> 
