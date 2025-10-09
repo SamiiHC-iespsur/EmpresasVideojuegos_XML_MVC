@@ -23,7 +23,7 @@
       <td>Sami & Marcos</td>
       <td>En progreso 🔄</td>
       <td>13-10-2025</td>
-      <td>Finalizing MVP features</td>
+      <td>Planear y organizar reparto de tareas</td>
     </tr>
     <tr>
       <td>Definir fichero XML</td>
