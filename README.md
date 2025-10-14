@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <td>Definir fichero XML</td>
-      <td>Sami & Marcos</td>
+      <td>Sami</td>
       <td>Terminado ✅</td>
       <td>14-10-2025</td>
       <td>Finalizar estructura y contenidos de Base de Datos XML</td>
