@@ -22,21 +22,21 @@
       <td>Definir Roadmap</td>
       <td>Sami & Marcos</td>
       <td>En progreso 🔄</td>
-      <td>13-10-2025</td>
+      <td>14-10-2025</td>
       <td>Planear y organizar reparto de tareas</td>
     </tr>
     <tr>
       <td>Definir fichero XML</td>
       <td>Sami & Marcos</td>
       <td>En progreso 🔄</td>
-      <td>13-10-2025</td>
+      <td>14-10-2025</td>
       <td>Finalizar estructura y contenidos de Base de Datos XML</td>
     </tr>
     <tr>
       <td>Desarrollo del software</td>
       <td>Sami & Marcos</td>
-      <td>Pendiente ⏳</td>
-      <td>14-10-2025</td>
+      <td>En progreso 🔄</td>
+      <td>22-10-2025</td>
       <td>Codificación</td>
     </tr>
   </tbody>
