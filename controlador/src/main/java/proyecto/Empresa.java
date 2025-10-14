@@ -1,10 +1,16 @@
 package proyecto;
 
+import jakarta.xml.bind.annotation.*;
 import java.util.*;
 
+@XmlRootElement(name = "empresa")
+@XmlType(propOrder = { "nombre", "pais", "fundacion", "juegosDestacados" })
 public class Empresa {
+    @XmlElement
     private String nombre;
+    @XmlElement
     private String pais;
+    @XmlElement
     private int fundacion;
     private List <Juego> juegosDestacados;
 
@@ -33,6 +39,8 @@ public class Empresa {
     public void setFundacion(int fundacion) {
         this.fundacion = fundacion;
     }
+    @XmlElementWrapper(name = "juegosDestacados")
+    @XmlElement(name = "juego")
     public List<Juego> getJuegosDestacados() {
         return juegosDestacados;
     }
