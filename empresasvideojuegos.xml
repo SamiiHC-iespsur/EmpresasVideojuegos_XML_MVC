@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Base de datos XML creada por Sami de las Heras Cózar.
+  
+	En el primer nivel se encapsulan una serie de empresas.
+	En el segundo nivel, cada empresa de videojuegos encapsula
+	su propio nombre, el país, la fundación y juegos destacados.
+	En el tercer y último nivel, encontramos encapsulados dicha lista de juego.
+   
+	Cada Empresa cuenta con un total de 3 juegos destacados por defecto,
+	con posibilidad	de añadir, eliminar o modificar entradas.
+-->
+
 <empresas>
     <empresa>
         <nombre>Nintendo</nombre>
@@ -50,4 +63,4 @@
             <juego>Overwatch</juego>
         </juegosDestacados>
     </empresa>
-</empresas> 
+</empresas>
