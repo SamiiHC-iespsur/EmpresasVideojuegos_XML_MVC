@@ -54,6 +54,13 @@
       <td>Codificación de los métodos encargados de manipular las entradas de la base de datos</td>
     </tr>
     <tr>
+      <td>Desarrollo de clase Principalr</td>
+      <td>Sami & Marcos</td>
+      <td>Pendiente ⏳</td>
+      <td>21-10-2025</td>
+      <td>Codificación del método Main del proyecto, en el que se demostrará la funcionalidad de los métodos definidos</td>
+    </tr>
+    <tr>
       <td>Desarrollo de funcionalidades adicionales</td>
       <td>Sami & Marcos</td>
       <td>Pendiente ⏳</td>
