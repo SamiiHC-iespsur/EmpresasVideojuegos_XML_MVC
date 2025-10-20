@@ -6,33 +6,36 @@ import java.util.*;
 @XmlRootElement(name = "empresa")
 @XmlType(propOrder = { "nombre", "pais", "fundacion", "juegosDestacados" })
 public class Empresa {
-    @XmlElement
     private String nombre;
-    @XmlElement
     private String pais;
-    @XmlElement
     private int fundacion;
-    private List <Juego> juegosDestacados;
+    private List <String> juegosDestacados = new ArrayList<>();
 
-    public Empresa(String nombre, String pais, int fundacion) {
+    public Empresa(String nombre, String pais, int fundacion, List<String> juegosDestacados) {
         this.nombre = nombre;
         this.pais = pais;
         this.fundacion = fundacion;
-        this.juegosDestacados = new ArrayList<>();
+        this.juegosDestacados = juegosDestacados;
     }
 
+    public Empresa() {
+    }
+
+    @XmlElement(name = "nombre")
     public String getNombre() {
         return nombre;
     }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    @XmlElement(name = "pais")
     public String getPais() {
         return pais;
     }
     public void setPais(String pais) {
         this.pais = pais;
     }
+    @XmlElement(name = "fundacion")
     public int getFundacion() {
         return fundacion;
     }
@@ -41,7 +44,7 @@ public class Empresa {
     }
     @XmlElementWrapper(name = "juegosDestacados")
     @XmlElement(name = "juego")
-    public List<Juego> getJuegosDestacados() {
+    public List<String> getJuegosDestacados() {
         return juegosDestacados;
     }
 }
