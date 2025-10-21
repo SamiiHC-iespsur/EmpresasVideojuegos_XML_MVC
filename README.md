@@ -41,30 +41,37 @@
     </tr>
     <tr>
       <td>Desarrollo de clase Vista</td>
-      <td>Marcos</td>
-      <td>En progreso 🔄</td>
-      <td>21-10-2025</td>
-      <td>Codificación de los métodos encargados de crear vistas de la base de datos</td>
-    </tr>
-    <tr>
-      <td>Desarrollo de clase Controlador</td>
       <td>Sami</td>
       <td>En progreso 🔄</td>
       <td>21-10-2025</td>
-      <td>Codificación de los métodos encargados de manipular las entradas de la base de datos</td>
+      <td>Codificación de la clase que contendrá los métodos encargados de crear vistas de la base de datos</td>
     </tr>
     <tr>
-      <td>Desarrollo de clase Principalr</td>
+      <td>Desarrollo de clase Controlador</td>
+      <td>Marcos</td>
+      <td>Terminado ✅</td>
+      <td>21-10-2025</td>
+      <td>Codificación de la clase que contendrá los métodos encargados de manipular las entradas de la base de datos</td>
+    </tr>
+    <tr>
+      <td>Desarrollo de clase Modelo</td>
       <td>Sami & Marcos</td>
       <td>Pendiente ⏳</td>
       <td>21-10-2025</td>
-      <td>Codificación del método Main del proyecto, en el que se demostrará la funcionalidad de los métodos definidos</td>
+      <td>Codificación de la clase Modelo del proyecto, en el que se instanciarán las clases Vista y Controlador</td>
+    </tr>
+    <tr>
+      <td>Desarrollo de clase Principal</td>
+      <td>Sami & Marcos</td>
+      <td>Pendiente ⏳</td>
+      <td>21-10-2025</td>
+      <td>Codificación del método Main del proyecto, en el que se instanciará la clase Modelo, a través de la cual se hará uso de los métodos de Vista y Controlador</td>
     </tr>
     <tr>
       <td>Desarrollo de funcionalidades adicionales</td>
       <td>Sami & Marcos</td>
       <td>Pendiente ⏳</td>
-      <td>23-10-2025</td>
+      <td>26-10-2025</td>
       <td>Codificación de métodos más allá de los requisitos mínimos exigidos</td>
     </tr>
   </tbody>
