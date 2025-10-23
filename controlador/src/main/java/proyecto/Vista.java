@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Vista {
-    private Scanner sc;
+    private final Scanner sc;
     
     public Vista() {
         this.sc = new Scanner(System.in);
@@ -15,8 +15,9 @@ public class Vista {
     public void imprimirEmpresas(List<Empresa> empresas) {
         System.out.println("\nLista de empresas:");
         for (Empresa empresa : empresas) {
-            System.out.println(empresa.toString()+"\n");
+            System.out.println(empresa.toString());
         }
+        System.out.println();
     }
     
     // Método para sacar mensajes por pantalla para el usuario
@@ -38,8 +39,9 @@ public class Vista {
         int fundacion = Integer.parseInt(sc.nextLine().trim());
         
         List<String> juegosDestacados = new ArrayList<>();
-        String juegoDestacado = "";
+        String juegoDestacado;
         while (true) {
+            System.out.print("Juego destacado (dejar en blanco para terminar): ");
             juegoDestacado = sc.nextLine().trim();
             if (juegoDestacado.isBlank() || juegoDestacado.isEmpty()) {
                 break;

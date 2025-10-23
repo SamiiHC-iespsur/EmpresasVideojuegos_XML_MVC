@@ -1,7 +1,12 @@
 package proyecto;
 
-import jakarta.xml.bind.annotation.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElementWrapper;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name = "empresa")
 @XmlType(propOrder = { "nombre", "pais", "fundacion", "juegosDestacados" })
@@ -55,5 +60,15 @@ public class Empresa {
     
     public void setJuegosDestacados(List<String> juegosDestacados) {
         this.juegosDestacados = juegosDestacados;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nombre: ").append(nombre).append("; ");
+        sb.append("País: ").append(pais).append("; ");
+        sb.append("Año de fundación: ").append(fundacion).append("; ");
+        sb.append("Juegos destacados: ").append(String.join(", ", juegosDestacados)).append(".");
+        return sb.toString();
     }
 }
