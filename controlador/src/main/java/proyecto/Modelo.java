@@ -6,7 +6,7 @@ import java.util.List;
 import jakarta.xml.bind.*;
 
 public class Modelo {
-    private static String ruta = "./empresasvideojuegos.xml";
+    private static final String ruta = "./recursos/empresasvideojuegos.xml";
 
     public void guardarEmpresa(Empresa e) throws Exception{
         File f = new File(ruta);

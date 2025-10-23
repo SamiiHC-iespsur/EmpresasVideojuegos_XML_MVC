@@ -18,33 +18,42 @@ public class Empresa {
         this.juegosDestacados = juegosDestacados;
     }
 
-    public Empresa() {
-    }
+    public Empresa() {}
 
     @XmlElement(name = "nombre")
     public String getNombre() {
         return nombre;
     }
+    
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
     @XmlElement(name = "pais")
     public String getPais() {
         return pais;
     }
+    
     public void setPais(String pais) {
         this.pais = pais;
     }
+    
     @XmlElement(name = "fundacion")
     public int getFundacion() {
         return fundacion;
     }
+    
     public void setFundacion(int fundacion) {
         this.fundacion = fundacion;
     }
+    
     @XmlElementWrapper(name = "juegosDestacados")
     @XmlElement(name = "juego")
     public List<String> getJuegosDestacados() {
         return juegosDestacados;
+    }
+    
+    public void setJuegosDestacados(List<String> juegosDestacados) {
+        this.juegosDestacados = juegosDestacados;
     }
 }
