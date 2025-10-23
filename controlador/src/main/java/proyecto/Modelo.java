@@ -1,13 +1,24 @@
 package proyecto;
 
+// Importaciones de utilidades y JAXB
 import java.io.File;
 import java.util.List;
 
-import jakarta.xml.bind.*;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 public class Modelo {
-    private static String ruta = "./empresasvideojuegos.xml";
+    // Ruta al archivo XML de empresas construida de forma independiente del sistema operativo
+    private final String ruta = "controlador" + File.separator
+                              + "src" + File.separator
+                              + "main" + File.separator
+                              + "java" + File.separator
+                              + "proyecto" + File.separator
+                              + "recursos" + File.separator
+                              + "empresasvideojuegos.xml";
 
+    // Método para guardar una nueva empresa en el archivo XML
     public void guardarEmpresa(Empresa e) throws Exception{
         File f = new File(ruta);
 
@@ -27,6 +38,7 @@ public class Modelo {
         marshaller.marshal(empresas, f);
     }
 
+    // Método para obtener la lista de empresas desde el archivo XML
     public List <Empresa> obtenerEmpresas() throws Exception {
         File f = new File(ruta);
 
