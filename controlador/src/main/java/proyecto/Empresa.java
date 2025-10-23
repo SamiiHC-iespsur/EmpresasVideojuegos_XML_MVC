@@ -1,5 +1,6 @@
 package proyecto;
 
+// Importaciones de utilidades
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,14 +9,17 @@ import jakarta.xml.bind.annotation.XmlElementWrapper;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
+// Anotaciones JAXB para definir el elemento raíz y el orden de los elementos hijos
 @XmlRootElement(name = "empresa")
 @XmlType(propOrder = { "nombre", "pais", "fundacion", "juegosDestacados" })
 public class Empresa {
+    // Atributos de la clase Empresa
     private String nombre;
     private String pais;
     private int fundacion;
     private List <String> juegosDestacados = new ArrayList<>();
 
+    // Constructor con todos los atributos
     public Empresa(String nombre, String pais, int fundacion, List<String> juegosDestacados) {
         this.nombre = nombre;
         this.pais = pais;
@@ -23,8 +27,10 @@ public class Empresa {
         this.juegosDestacados = juegosDestacados;
     }
 
+    // Constructor sin atributos (sobrecarga)
     public Empresa() {}
 
+    // Getters y Setters con sus anotaciones JAXB correspondientes
     @XmlElement(name = "nombre")
     public String getNombre() {
         return nombre;
@@ -62,6 +68,7 @@ public class Empresa {
         this.juegosDestacados = juegosDestacados;
     }
 
+    // Método toString para mostrar la información de la empresa con formato legible
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

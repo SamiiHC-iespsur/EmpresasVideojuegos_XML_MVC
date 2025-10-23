@@ -1,10 +1,12 @@
 package proyecto;
 
+// Importaciones de utilidades
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Vista {
+    // Declaración e inicialización de Scanner para entrada de datos
     private final Scanner sc;
     
     public Vista() {
@@ -38,6 +40,7 @@ public class Vista {
         System.out.print("Año de fundación: ");
         int fundacion = Integer.parseInt(sc.nextLine().trim());
         
+        // Al ser una lista, se usa un bucle para permitir múltiples entradas
         List<String> juegosDestacados = new ArrayList<>();
         String juegoDestacado;
         while (true) {
