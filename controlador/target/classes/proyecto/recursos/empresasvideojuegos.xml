@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-	Base de datos XML creada por Sami de las Heras Cózar.
-  
-	En el primer nivel se encapsulan una serie de empresas.
-	En el segundo nivel, cada empresa de videojuegos encapsula
-	su propio nombre, el país, la fundación y juegos destacados.
-	En el tercer y último nivel, encontramos encapsulados dicha lista de juego.
-   
-	Cada Empresa cuenta con un total de 3 juegos destacados por defecto,
-	con posibilidad	de añadir, eliminar o modificar entradas.
--->
-
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <empresas>
     <empresa>
         <nombre>Nintendo</nombre>
@@ -61,6 +48,16 @@
             <juego>Call of Duty</juego>
             <juego>World of Warcraft</juego>
             <juego>Overwatch</juego>
+        </juegosDestacados>
+    </empresa>
+    <empresa>
+        <nombre>Epic Games</nombre>
+        <pais>Estados Unidos</pais>
+        <fundacion>1991</fundacion>
+        <juegosDestacados>
+            <juego>Fortnite</juego>
+            <juego>Rocket League</juego>
+            <juego>Fall guys</juego>
         </juegosDestacados>
     </empresa>
 </empresas>
