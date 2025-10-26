@@ -60,4 +60,13 @@
             <juego>Fall guys</juego>
         </juegosDestacados>
     </empresa>
+    <empresa>
+        <nombre>Microsoft</nombre>
+        <pais>Estados Unidos</pais>
+        <fundacion>1975</fundacion>
+        <juegosDestacados>
+            <juego>Minecraft</juego>
+            <juego>Roblox</juego>
+        </juegosDestacados>
+    </empresa>
 </empresas>

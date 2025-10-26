@@ -2,9 +2,11 @@ package proyecto;
 
 // Importaciones de utilidades y JAXB
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
 
@@ -19,7 +21,7 @@ public class Modelo {
                               + "empresasvideojuegos.xml";
 
     // Método para guardar una nueva empresa en el archivo XML
-    public void guardarEmpresa(Empresa e) throws Exception{
+    public void guardarEmpresa(Empresa e) throws IOException, JAXBException{
         File f = new File(ruta);
 
         JAXBContext jc = JAXBContext.newInstance(Empresas.class);
@@ -39,7 +41,7 @@ public class Modelo {
     }
 
     // Método para obtener la lista de empresas desde el archivo XML
-    public List <Empresa> obtenerEmpresas() throws Exception {
+    public List <Empresa> obtenerEmpresas() throws IOException, JAXBException {
         File f = new File(ruta);
 
         JAXBContext jc = JAXBContext.newInstance(Empresas.class);
