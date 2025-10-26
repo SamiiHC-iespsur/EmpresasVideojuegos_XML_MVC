@@ -41,32 +41,13 @@
         </juegosDestacados>
     </empresa>
     <empresa>
-        <nombre>Activision Blizzard</nombre>
-        <pais>Estados Unidos</pais>
-        <fundacion>2008</fundacion>
-        <juegosDestacados>
-            <juego>Call of Duty</juego>
-            <juego>World of Warcraft</juego>
-            <juego>Overwatch</juego>
-        </juegosDestacados>
-    </empresa>
-    <empresa>
-        <nombre>Epic Games</nombre>
+        <nombre>Epic</nombre>
         <pais>Estados Unidos</pais>
         <fundacion>1991</fundacion>
         <juegosDestacados>
             <juego>Fortnite</juego>
             <juego>Rocket League</juego>
             <juego>Fall guys</juego>
-        </juegosDestacados>
-    </empresa>
-    <empresa>
-        <nombre>Microsoft</nombre>
-        <pais>Estados Unidos</pais>
-        <fundacion>1975</fundacion>
-        <juegosDestacados>
-            <juego>Minecraft</juego>
-            <juego>Roblox</juego>
         </juegosDestacados>
     </empresa>
 </empresas>

@@ -41,7 +41,7 @@
     </tr>
     <tr>
       <td>Desarrollo de clase Controlador</td>
-      <td>Marcos</td>
+      <td>Sami & Marcos</td>
       <td>Terminado ✅</td>
       <td>21-10-2025</td>
       <td>Codificación de la clase que contendrá los métodos encargados de manipular las entradas de la base de datos</td>
@@ -70,7 +70,7 @@
     <tr>
       <td>Desarrollo de funcionalidades adicionales</td>
       <td>Sami</td>
-      <td>En progreso 🔄</td>
+      <td>Terminado ✅</td>
       <td>26-10-2025</td>
       <td>Codificación de métodos más allá de los requisitos mínimos exigidos</td>
     </tr>

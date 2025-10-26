@@ -7,6 +7,7 @@ import java.util.List;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlElementWrapper;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
 import jakarta.xml.bind.annotation.XmlType;
 
 // Anotaciones JAXB para definir el elemento raíz y el orden de los elementos hijos
@@ -14,6 +15,7 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(propOrder = { "nombre", "pais", "fundacion", "juegosDestacados" })
 public class Empresa {
     // Atributos de la clase Empresa
+    private String nombrePredecesor;
     private String nombre;
     private String pais;
     private int fundacion;
@@ -27,10 +29,27 @@ public class Empresa {
         this.juegosDestacados = juegosDestacados;
     }
 
+    public Empresa(String nombrePredecesor, String nombre, String pais, int fundacion, List<String> juegosDestacados) {
+        this.nombrePredecesor = nombrePredecesor;
+        this.nombre = nombre;
+        this.pais = pais;
+        this.fundacion = fundacion;
+        this.juegosDestacados = juegosDestacados;
+    }
+
     // Constructor sin atributos (sobrecarga)
     public Empresa() {}
 
     // Getters y Setters con sus anotaciones JAXB correspondientes
+    @XmlTransient
+    public String getNombrePredecesor() {
+        return nombrePredecesor;
+    }
+
+    public void setNombrePredecesor(String nombrePredecesor) {
+        this.nombrePredecesor = nombrePredecesor;
+    }
+
     @XmlElement(name = "nombre")
     public String getNombre() {
         return nombre;
